@@ -12,5 +12,3 @@ The goal is to strengthen my understanding of basic programming concepts and pro
 - **Arrays & Strings** – One-dimensional and multi-dimensional arrays, string manipulation.  
 - **Pointers & References** – Basics of pointers and references in C++.  
 - **Simple Projects** – Mini practice programs applying the above concepts.
-
-## Folder Structure
