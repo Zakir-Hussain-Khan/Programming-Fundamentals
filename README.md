@@ -1,6 +1,6 @@
 # Programming Fundamentals Practice
 
-This repository contains my **practice exercises for Programming Fundamentals (PF)** using C++.  
+This repository contains my **practice exercises for Programming Fundamentals (PF)** using C Language.  
 The goal is to strengthen my understanding of basic programming concepts and problem-solving skills.
 
 ## Topics Covered
