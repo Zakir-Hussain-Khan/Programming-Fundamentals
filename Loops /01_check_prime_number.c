@@ -6,7 +6,7 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if (num <= 1) {
+    if (num <= 1) { 
         isPrime = 0;
     } else {
         for (i = 2; i * i <= num; i++) {
