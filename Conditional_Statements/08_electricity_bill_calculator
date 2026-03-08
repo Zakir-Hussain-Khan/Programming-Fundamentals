@@ -1,20 +1,26 @@
-// Calculate electricity bill using slabs
-#include<stdio.h>
-int main(){
-    int units;
-    float bill;
-    printf("Enter electricity units: ");
-    scanf("%d", &units);
-    if(units <= 100){
-        bill = units * 5;
-    }
-    else if(units <= 200){
+// 08 Calculate electricity bill using slabs 
 
-        bill = (100 * 5) + (units - 100) * 8 ;
+    #include<stdio.h>
+
+    int main(){
+        int unit;
+        float bill = 0 ;
+        printf("Enter your unit: ");
+        if(scanf("%d", &unit) != 1){
+            printf("Invalid input! Please enter a numeric value.");
+            return 1;
+        }
+        if(unit < 0){
+          printf("Units cannot be negative.\n");
+          return 1;
+        }
+        if(unit<=100){
+            bill = unit * 5;
+        } else if(unit<=200){
+            bill = (100 * 5) +  (unit - 100) * 8 ;
+        }else {
+            bill = (100 * 5) + (100 * 8) + (unit - 200) * 10 ;
+        }
+        printf("Total Electricity Bill = %.2f\n", bill);
+        return 0;
     }
-    else {
-        bill = (100 * 5) + (100 * 8) + (units - 200) * 10 ;
-    }
-    printf("Total Electricity Bill = %.2f\n", bill);    
-    return 0;
-}
