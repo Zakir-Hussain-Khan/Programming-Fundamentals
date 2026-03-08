@@ -1,23 +1,20 @@
-// Find the largest of 3 numbers
+// 3. Find the largest of 3 numbers 
 #include<stdio.h>
+
 int main(){
-    int a, b, c;
-    printf("Enter First Number: ");
-    scanf("%d", &a);
-    printf("Enter second  Number: ");
-    scanf("%d", &b);
-    printf("Enter Third Number: ");
-    scanf("%d", &c);
-    if(a >= b && a >= c){
-        printf("%d is the largest number.\n", a);
-
+    int num1,num2,num3;
+    printf("Enter your number:");
+    if(scanf("%d %d %d", &num1,&num2,&num3)!=3){
+        printf("Invalid input! Please enter a numeric value.");
+        return 1;
     }
-    else if(b >= a  &&  b >= c){
-        printf("%d is the largest number.\n", b);
-
+    
+    if(num1>=num2 && num1>=num3){
+        printf("%d is the largest of 3 Numbers",num1);
+    } else if(num2>=num1 && num2>=num3){
+        printf("%d is the largest of 3 Numbers",num2);
+    } else{
+        printf("%d is the largest of 3 Numbers",num3);
     }
-    else {
-        printf("%d is the largest number.\n", c);
-        }
     return 0;
 }
