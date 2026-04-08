@@ -1,5 +1,3 @@
-// Add two 2D matrices
-
 #include <stdio.h>
 
 int main() {
